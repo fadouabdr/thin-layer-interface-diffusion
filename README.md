@@ -16,12 +16,12 @@ with controlled-release fertilizer granules as a motivating application.
 Under the thin-coating and rapid-normal-equilibration regime considered in the
 manuscript, the resolved coating is replaced by the Robin law
 
-\(
+$$
 -D_f \nabla c_f \cdot n
 =
 \kappa_h(t)
 \left(c_{\mathrm{int}}(t)-\alpha c_f\right),
-\)
+$$
 
 where
 
