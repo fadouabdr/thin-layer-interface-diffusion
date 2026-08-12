@@ -21,7 +21,7 @@ manuscript, the resolved coating is replaced by the Robin law
 =
 \kappa_h(t)
 \left(c_{\mathrm{int}}(t)-\alpha c_f\right),
-)/
+\)
 
 where
 
