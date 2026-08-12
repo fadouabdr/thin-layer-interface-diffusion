@@ -1,0 +1,81 @@
+{
+  "core_rendering": {
+    "computed_finite_element_field_inside_core": false,
+    "value": "prescribed c_int(t)"
+  },
+  "created_utc": "2026-08-01T14:51:34.626384+00:00",
+  "diagnostics": {
+    "diagnostic_tolerance": 1e-08,
+    "initialization_checks": {
+      "reduced_common_exterior_vertex_mismatch": 0.0,
+      "resolved_common_exterior_vertex_mismatch": 3.3306690738754696e-16,
+      "resolved_inner_partition_vertex_mismatch": 6.661338147750939e-16,
+      "resolved_outer_partition_vertex_mismatch": 4.440892098500626e-16
+    },
+    "initialization_tolerance": 1e-10,
+    "max_bulk_balance_normalized_full": 5.343122874401058e-15,
+    "max_bulk_balance_normalized_reduced": 1.148180260134933e-14,
+    "max_initialization_vertex_mismatch": 6.661338147750939e-16,
+    "max_robin_flux_mismatch_relative": 2.0906854799081606e-14,
+    "passed": true,
+    "relative_max_cumulative_release_difference": 0.0370381877625916,
+    "relative_max_flux_difference": 0.21253170544689076,
+    "relative_time_l2_cumulative_release_difference": 0.03815099469665705,
+    "relative_time_l2_flux_difference": 0.041808675831518746
+  },
+  "figures": [
+    "results/circular/figures_common_initial/circular_geometry_mesh.pdf",
+    "results/circular/figures_common_initial/circular_geometry_mesh.png",
+    "results/circular/figures_common_initial/circular_concentration_snapshots.pdf",
+    "results/circular/figures_common_initial/circular_concentration_snapshots.png",
+    "results/circular/figures_common_initial/circular_release_curves.pdf",
+    "results/circular/figures_common_initial/circular_release_curves.png"
+  ],
+  "flux_integration_surfaces": {
+    "reduced": "Gamma_g",
+    "resolved": "Gamma_h"
+  },
+  "geometry_figure": {
+    "annulus_insets": true,
+    "complete_square_domain": true,
+    "resolved_radial_layers_shown": 8
+  },
+  "input_sha256": {
+    "curves": "d653517f17bb8bf78f68e8e8e2d09db322921c520161887ee70bcf91ae589e75",
+    "manifest": "49e1d666e9230a0088a05bd9e5f08c756f3ecd002fb0c1860c7393dd869e505a",
+    "snapshots": "e8838b992c4882853d394dd7967388424d0ab9db6fb3456fc7829b909f825121"
+  },
+  "output_sha256": {
+    "circular_concentration_snapshots.pdf": "5daf63f294936260b92485d15ebfed069a4aae005ce034f58e0a1775f50b5ba3",
+    "circular_concentration_snapshots.png": "80035c69798721a0350ff587218f0e3f6641fc2ec7364dfc8cc4fbe39fd34d49",
+    "circular_geometry_mesh.pdf": "b15af1c2f3d5698652de5f9e6203ea2805a2121b6e44457cb1464a12027b841a",
+    "circular_geometry_mesh.png": "0bd38d812bc6afc60e81c9b4658b299e5e34f9fe43b075a76a2f5ed520ac8fc9",
+    "circular_release_curves.pdf": "000b54b91428bd87555d2983101c8716b87b1cbc308f604828353c7298f144a2",
+    "circular_release_curves.png": "2a246e834ff0110c4d31f381e3f3c49cca94f287b3835269f58923fede17498d"
+  },
+  "physical_concentration_reconstruction": {
+    "coating": "c_m = 1.3 q",
+    "exterior": "c_f = q",
+    "subdomains_rendered_separately": true
+  },
+  "png_dpi": 400,
+  "production_manifest_created_utc": "2026-08-01T14:48:38.288980+00:00",
+  "purpose": "Publication figures for the accepted qualitative circular resolved-versus-reduced comparison.",
+  "shared_snapshot_color_limits": [
+    0.0,
+    0.9389434736891332
+  ],
+  "snapshot_fractions": [
+    0.1,
+    0.5,
+    0.9
+  ],
+  "snapshot_selection_rule": "Fractions of the resolved cumulative release observed at the finite production horizon T, not fractions of an eventual infinite-time total.",
+  "snapshot_times": [
+    0.063,
+    0.379,
+    0.842
+  ],
+  "snapshot_title_rule": "actual physical times only",
+  "status": "passed"
+}

@@ -1,0 +1,203 @@
+{
+  "config": {
+    "angular_sectors": 16,
+    "angular_segments_per_sector": 21,
+    "box_half_width": 0.75,
+    "box_side_length": 1.5,
+    "bulk_size": 0.05,
+    "coating_thickness": 0.01,
+    "core_radius": 0.25,
+    "dt": 0.001,
+    "geometry_relative_tolerance": 0.005,
+    "h_over_R": 0.04,
+    "interface_size": 0.005,
+    "outer_coating_radius": 0.26,
+    "physical_tags": {
+      "bulk_cell": 2,
+      "coating_bulk_interface": 40,
+      "coating_cell": 1,
+      "core_boundary": 10,
+      "outer_boundary": 20
+    },
+    "polynomial_degree": 1,
+    "radial_layers": 8,
+    "scenario": "time_dependent",
+    "scenario_metadata": {
+      "core_concentration_law": "c_int(t) = exp(-t)",
+      "diffusivity_law": "D_m(t) = 1 + 0.5 sin(t)",
+      "scenario": "time_dependent"
+    },
+    "t_final": 1.0,
+    "total_circle_segments": 336,
+    "transition_end": 0.25,
+    "transition_start": 0.02
+  },
+  "created_utc": "2026-08-01T12:55:44.218746+00:00",
+  "purpose": "Geometry and physical-tag gate for the circular illustration; no transient PDE was solved.",
+  "reduced": {
+    "cell_tag_counts": {
+      "2": 9216
+    },
+    "facet_tag_counts": {
+      "10": 336,
+      "20": 120,
+      "unmarked": 13596
+    },
+    "files": {
+      "cells_xdmf": "results/circular/meshes/reduced_cells.xdmf",
+      "facets_xdmf": "results/circular/meshes/reduced_facets.xdmf",
+      "model_name": "reduced",
+      "msh": "results/circular/meshes/reduced.msh"
+    },
+    "measure_checks": [
+      {
+        "actual": 2.0536619024755156,
+        "expected": 2.0536504591506377,
+        "name": "reduced bulk area",
+        "passed": true,
+        "relative_error": 5.572187237079787e-06,
+        "relative_tolerance": 0.005
+      },
+      {
+        "actual": 1.5707734398449982,
+        "expected": 1.5707963267948966,
+        "name": "core perimeter",
+        "passed": true,
+        "relative_error": 1.4570284834496134e-05,
+        "relative_tolerance": 0.005
+      },
+      {
+        "actual": 5.999999999999995,
+        "expected": 6.0,
+        "name": "square outer perimeter",
+        "passed": true,
+        "relative_error": 8.881784197001252e-16,
+        "relative_tolerance": 0.005
+      },
+      {
+        "absolute_error": 5.329070518200751e-15,
+        "absolute_tolerance": 7.570773439844988e-10,
+        "actual": 5.329070518200751e-15,
+        "expected": 0.0,
+        "name": "untagged exterior-boundary measure",
+        "passed": true
+      }
+    ],
+    "model": "reduced",
+    "num_cells": 9216,
+    "num_dofs_p1": 4836,
+    "num_vertices": 4836,
+    "passed": true,
+    "radial_layer_count": 0,
+    "radial_spacing_max": null,
+    "radial_spacing_min": null,
+    "tag_checks": {
+      "cell_tags_exact": true,
+      "facet_tags_exact": true,
+      "no_untagged_cells": true
+    },
+    "triangle_quality": {
+      "edge_length_max": 0.06385295210613172,
+      "edge_length_min": 0.003361337468745228,
+      "quality_mean": 0.9767823143406207,
+      "quality_median": 0.9901693031011807,
+      "quality_min": 0.6905583738747807
+    }
+  },
+  "resolved": {
+    "cell_tag_counts": {
+      "1": 5376,
+      "2": 9440
+    },
+    "facet_tag_counts": {
+      "10": 336,
+      "20": 120,
+      "40": 336,
+      "unmarked": 21660
+    },
+    "files": {
+      "cells_xdmf": "results/circular/meshes/resolved_cells.xdmf",
+      "facets_xdmf": "results/circular/meshes/resolved_facets.xdmf",
+      "model_name": "resolved",
+      "msh": "results/circular/meshes/resolved.msh"
+    },
+    "measure_checks": [
+      {
+        "actual": 0.016021188757996987,
+        "expected": 0.016022122533307967,
+        "name": "coating area",
+        "passed": true,
+        "relative_error": 5.8280375090065816e-05,
+        "relative_tolerance": 0.005
+      },
+      {
+        "actual": 2.037640713717527,
+        "expected": 2.03762833661733,
+        "name": "resolved bulk area",
+        "passed": true,
+        "relative_error": 6.074267801820513e-06,
+        "relative_tolerance": 0.005
+      },
+      {
+        "actual": 1.6336043774387983,
+        "expected": 1.6336281798666925,
+        "name": "coating-bulk interface perimeter",
+        "passed": true,
+        "relative_error": 1.4570284834447201e-05,
+        "relative_tolerance": 0.005
+      },
+      {
+        "actual": 1.5707734398449982,
+        "expected": 1.5707963267948966,
+        "name": "core perimeter",
+        "passed": true,
+        "relative_error": 1.4570284834496134e-05,
+        "relative_tolerance": 0.005
+      },
+      {
+        "actual": 5.999999999999995,
+        "expected": 6.0,
+        "name": "square outer perimeter",
+        "passed": true,
+        "relative_error": 8.881784197001252e-16,
+        "relative_tolerance": 0.005
+      },
+      {
+        "absolute_error": 5.329070518200751e-15,
+        "absolute_tolerance": 7.570773439844988e-10,
+        "actual": 5.329070518200751e-15,
+        "expected": 0.0,
+        "name": "untagged exterior-boundary measure",
+        "passed": true
+      }
+    ],
+    "model": "resolved",
+    "num_cells": 14816,
+    "num_dofs_p1": 7636,
+    "num_vertices": 7636,
+    "passed": true,
+    "radial_layer_count": 8,
+    "radial_spacing_max": 0.0012500000000162936,
+    "radial_spacing_min": 0.0012499999999944778,
+    "tag_checks": {
+      "cell_tags_exact": true,
+      "facet_tags_exact": true,
+      "no_untagged_cells": true,
+      "radial_layer_count": true
+    },
+    "triangle_quality": {
+      "edge_length_max": 0.06421295809760907,
+      "edge_length_min": 0.001249999999971849,
+      "quality_mean": 0.7764587891845444,
+      "quality_median": 0.9617303869477476,
+      "quality_min": 0.4185004049805013
+    }
+  },
+  "software": {
+    "dolfin": "2019.2.0.dev0",
+    "gmsh": "4.12.2",
+    "meshio": "5.3.5",
+    "numpy": "1.21.5"
+  },
+  "status": "passed"
+}

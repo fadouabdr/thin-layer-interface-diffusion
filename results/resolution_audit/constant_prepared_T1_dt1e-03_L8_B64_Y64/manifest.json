@@ -1,0 +1,53 @@
+{
+  "T": 1.0,
+  "all_metric_acceptance_threshold": 0.1,
+  "baseline_n_bulk": 64,
+  "baseline_n_layer": 8,
+  "baseline_ny": 64,
+  "candidate_dt": 0.001,
+  "configurations": [
+    {
+      "case": "baseline",
+      "dt": 0.001,
+      "n_bulk": 64,
+      "n_layer": 8,
+      "ny": 64
+    },
+    {
+      "case": "exterior_refined",
+      "dt": 0.001,
+      "n_bulk": 128,
+      "n_layer": 8,
+      "ny": 128
+    },
+    {
+      "case": "coating_refined",
+      "dt": 0.001,
+      "n_bulk": 64,
+      "n_layer": 16,
+      "ny": 64
+    },
+    {
+      "case": "time_refined",
+      "dt": 0.0005,
+      "n_bulk": 64,
+      "n_layer": 8,
+      "ny": 64
+    },
+    {
+      "case": "combined_reference",
+      "dt": 0.0005,
+      "n_bulk": 128,
+      "n_layer": 16,
+      "ny": 128
+    }
+  ],
+  "h_values": [
+    0.08,
+    0.01
+  ],
+  "initialization": "prepared",
+  "primary_acceptance_threshold": 0.05,
+  "scenario": "constant",
+  "schema_version": 2
+}

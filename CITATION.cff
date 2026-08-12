@@ -1,0 +1,30 @@
+cff-version: 1.2.0
+message: "If you use this software or the associated numerical data, please cite the archived software release and the associated manuscript."
+type: software
+
+title: "Numerical code and data for thin-layer asymptotics for diffusion through coatings with time-dependent diffusivity"
+version: 1.0.0
+license: MIT
+
+authors:
+  - given-names: Fadoua
+    family-names: Boudrari
+    affiliation: "The UM6P Vanguard Center, Mohammed VI Polytechnic University, Rabat, Morocco"
+
+abstract: >-
+  Numerical code, verification data, and resolved-reduced computational
+  results supporting the manuscript "Thin-layer asymptotics for diffusion
+  through coatings with time-dependent diffusivity: derivation and numerical
+  assessment of an effective interface model." The repository contains
+  manufactured-solution verification, planar decreasing-thickness
+  resolved-reduced comparisons, numerical-resolution audits, and a
+  circular-granule comparison for the leading effective Robin interface model.
+
+keywords:
+  - thin-layer asymptotics
+  - diffusion
+  - effective interface models
+  - Robin interface conditions
+  - time-dependent diffusivity
+  - finite element method
+  - resolved-reduced comparison

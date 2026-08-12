@@ -1,0 +1,11 @@
+{
+  "T": 1.0,
+  "candidate_settings_accepted": true,
+  "dt": 0.001,
+  "initialization": "prepared",
+  "interpretation": "Accepted: baseline differs from the combined reference by at most 5% for field/mass errors and 10% for all audited model-discrepancy metrics.",
+  "n_bulk": 64,
+  "n_layer": 8,
+  "ny": 64,
+  "scenario": "time_dependent"
+}

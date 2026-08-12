@@ -1,0 +1,24 @@
+{
+  "T": 1.0,
+  "command": "/work/scripts/run_canonical_planar_validation.py --scenario time_dependent --initialization prepared --t-final 1.0 --dt 1e-3 --thicknesses 0.08 0.04 0.02 0.01 --n-layer 8 --n-bulk 64 --ny 64",
+  "core_concentration_law": "c_int(t) = exp(-t)",
+  "created_utc": "2026-07-29T11:37:49.279834+00:00",
+  "diffusivity_law": "D_m(t) = 1 + 0.5 sin(t)",
+  "dt": 0.001,
+  "fenics_dolfin_version": "2019.2.0.dev0",
+  "git_commit": null,
+  "initialization": "prepared",
+  "n_bulk": 64,
+  "n_layer": 8,
+  "ny": 64,
+  "python_version": "3.10.12",
+  "scenario": "time_dependent",
+  "schema_version": 2,
+  "status": "candidate settings; production status requires resolution-audit acceptance",
+  "thicknesses": [
+    0.08,
+    0.04,
+    0.02,
+    0.01
+  ]
+}

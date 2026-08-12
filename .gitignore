@@ -1,0 +1,24 @@
+# macOS
+.DS_Store
+
+# Python
+__pycache__/
+*.py[cod]
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Local Python environments
+.venv/
+venv/
+env/
+.fieldcheck-env/
+
+# Editors
+.vscode/
+.idea/
+
+# Temporary files
+*~
+*.swp
+*.swo

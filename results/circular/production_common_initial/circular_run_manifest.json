@@ -1,0 +1,107 @@
+{
+  "config": {
+    "angular_sectors": 16,
+    "angular_segments_per_sector": 21,
+    "box_half_width": 0.75,
+    "box_side_length": 1.5,
+    "bulk_size": 0.05,
+    "coating_thickness": 0.01,
+    "core_radius": 0.25,
+    "dt": 0.001,
+    "geometry_relative_tolerance": 0.005,
+    "h_over_R": 0.04,
+    "interface_size": 0.005,
+    "outer_coating_radius": 0.26,
+    "physical_tags": {
+      "bulk_cell": 2,
+      "coating_bulk_interface": 40,
+      "coating_cell": 1,
+      "core_boundary": 10,
+      "outer_boundary": 20
+    },
+    "polynomial_degree": 1,
+    "radial_layers": 8,
+    "scenario": "time_dependent",
+    "scenario_metadata": {
+      "core_concentration_law": "c_int(t) = exp(-t)",
+      "diffusivity_law": "D_m(t) = 1 + 0.5 sin(t)",
+      "scenario": "time_dependent"
+    },
+    "t_final": 1.0,
+    "total_circle_segments": 336,
+    "transition_end": 0.25,
+    "transition_start": 0.02
+  },
+  "created_utc": "2026-08-01T14:48:38.288980+00:00",
+  "diagnostics": {
+    "diagnostic_tolerance": 1e-08,
+    "initialization_checks": {
+      "reduced_common_exterior_vertex_mismatch": 0.0,
+      "resolved_common_exterior_vertex_mismatch": 3.3306690738754696e-16,
+      "resolved_inner_partition_vertex_mismatch": 6.661338147750939e-16,
+      "resolved_outer_partition_vertex_mismatch": 4.440892098500626e-16
+    },
+    "initialization_tolerance": 1e-10,
+    "max_bulk_balance_normalized_full": 5.343122874401058e-15,
+    "max_bulk_balance_normalized_reduced": 1.148180260134933e-14,
+    "max_initialization_vertex_mismatch": 6.661338147750939e-16,
+    "max_robin_flux_mismatch_relative": 2.0906854799081606e-14,
+    "passed": true,
+    "relative_max_cumulative_release_difference": 0.0370381877625916,
+    "relative_max_flux_difference": 0.21253170544689076,
+    "relative_time_l2_cumulative_release_difference": 0.03815099469665705,
+    "relative_time_l2_flux_difference": 0.041808675831518746
+  },
+  "files": {
+    "curves": "results/circular/production_common_initial/circular_curves.csv",
+    "manifest": "results/circular/production_common_initial/circular_run_manifest.json",
+    "snapshots": "results/circular/production_common_initial/circular_snapshots.npz"
+  },
+  "initialization": {
+    "common_exterior_definition": "Stationary reduced-domain Robin finite-element solution at t=0; the same continuum function is interpolated onto both exterior meshes.",
+    "common_exterior_initial_datum": true,
+    "flux_compatibility_statement": "The coating profile enforces both partition traces. It is not forced to satisfy resolved flux continuity at t=0; displayed snapshots are selected after the coating normal-equilibration scale.",
+    "name": "stationary_reduced_robin_common_exterior",
+    "resolved_coating_profile": "Affine in radial distance between K_in*c_int(0)/K_out on Gamma_g and the common exterior trace on Gamma_h.",
+    "source_mesh_num_cells": 9216,
+    "source_mesh_num_dofs": 4836
+  },
+  "mesh_audit": "results/circular/meshes/circular_mesh_audit.json",
+  "mesh_audit_created_utc": "2026-08-01T12:55:44.218746+00:00",
+  "mode": "production",
+  "purpose": "Paired circular resolved/reduced illustration; qualitative curved comparison, not an asymptotic convergence-rate experiment.",
+  "reduced": {
+    "num_cells": 9216,
+    "num_dofs": 4836,
+    "stationary_balance_normalized": 9.51317202497884e-15,
+    "stationary_robin_mismatch": 7.638334409421077e-14
+  },
+  "resolved": {
+    "num_cells": 14816,
+    "num_dofs": 7636,
+    "stationary_balance_normalized": 1.1062353909574631e-16
+  },
+  "snapshot_fraction_definition": "Fractions of the resolved cumulative release observed at the finite production horizon T, not fractions of an eventual infinite-time total.",
+  "snapshot_fractions": [
+    0.1,
+    0.5,
+    0.9
+  ],
+  "snapshot_indices": [
+    63,
+    379,
+    842
+  ],
+  "snapshot_times": [
+    0.063,
+    0.379,
+    0.842
+  ],
+  "software": {
+    "dolfin": "2019.2.0.dev0",
+    "gmsh": "4.12.2",
+    "meshio": "5.3.5",
+    "numpy": "1.21.5"
+  },
+  "status": "passed"
+}
