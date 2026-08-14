@@ -14,19 +14,19 @@ with controlled-release fertilizer granules as a motivating application.
 
 Under the thin-coating and rapid-normal-equilibration regime considered in the manuscript, the resolved coating is replaced by the Robin law
 
-$$
+```math
 -D_f \nabla c_f \cdot n
 =
-\kappa_h(t)\left(c_{\mathrm{int}}(t)-\alpha c_f\right),
-$$
+\kappa_h(t)\left(c_{\mathrm{int}}(t)-\alpha c_f\right).
+```
 
 where
 
-$$
+```math
 \kappa_h(t)=\frac{K_{\mathrm{in}}D_m(t)}{h},
 \qquad
 \alpha=\frac{K_{\mathrm{out}}}{K_{\mathrm{in}}}.
-$$
+```
 
 The transfer coefficient is determined directly from the coating thickness,
 the prescribed time-dependent diffusivity, and the partition parameters; it
