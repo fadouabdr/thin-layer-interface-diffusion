@@ -7,20 +7,17 @@ resolved–reduced computational results supporting the manuscript
 > diffusivity: derivation and numerical assessment of an effective interface
 > model**
 
-by Fadoua Boudrari, Abdessamad Belfakir, Abderrahmane Habbal, and Ahmed Ratnani.
 
 The manuscript derives and numerically assesses an effective interface model
 for transient diffusion through a thin coating surrounding a well-mixed core,
 with controlled-release fertilizer granules as a motivating application.
 
-Under the thin-coating and rapid-normal-equilibration regime considered in the
-manuscript, the resolved coating is replaced by the Robin law
+Under the thin-coating and rapid-normal-equilibration regime considered in the manuscript, the resolved coating is replaced by the Robin law
 
 $$
 -D_f \nabla c_f \cdot n
 =
-\kappa_h(t)
-\left(c_{\mathrm{int}}(t)-\alpha c_f\right),
+\kappa_h(t)\left(c_{\mathrm{int}}(t)-\alpha c_f\right),
 $$
 
 where
